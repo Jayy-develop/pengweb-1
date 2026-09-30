@@ -96,7 +96,7 @@
                             <br>
                             <input type="text" name="npm" placeholder="Contoh : 2315061118" required pattern="[0-9]{8,12}" title="NPM harus berupa angka 8-12 digit">
                             <br>
-                            <label for="Nama Lengkap">
+                            <label for="Nama Lengkap">Nama Lengkap</label>
                                 <br>
                                 <input type="text" id="nama" name="nama" placeholder="Contoh : Jaya Pratama" required minlength="3"
                                 maxlength="100">
@@ -105,12 +105,24 @@
 
                                 </small>
                             </label>
-                            <label for="Program Studi"></label>
+                            <label for="Program Studi">Program Studi</label>
                             <br>
                             <select name="program_studi" id="program_studi" required>
                                 <option value="">Pilih Program Studi</option>
                                 <option value="Teknik Informatika">Teknik Informatika</option>
                             </select>
+                            <label for="angkatan">Tahun Angkatan</label>
+                            <br>
+                            <input type="number" id="angkatan" name="angkatan" placeholder="Contoh 2024" required min="2018" max="2026">
+                            <br>
+                            <small></small>
+                            <label for="email">Alamat Email:</label>
+                            <br>
+                            <input type="email" id="email"  name="email" placeholder="Contoh email@gmail.com" required>
+                            <br>
+                            <small></small>
+                            <button type="submit">Simpan Data Mahasiswa</button>
+                            <button type="reset">Reset Formulir</button>
                         </p>
                     </legend>
                 </fieldset>
