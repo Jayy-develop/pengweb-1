@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Data Mahasiswa</title>
+</head>
+<body>
+    <header>
+        <h1>Sistem Informasi Data Mahahasiswa </h1>
+        <p>Sistem Pengolahan Data Mahasiswa</p>
+        <img src="poto.jpeg" alt="gambar sistem" width="150" height="150"
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="#informasi">Informasi Aplikasi</a></li>
+            <li><a href="#daftar-mahasiswa">Daftar Mahasiswa</a></li>
+            <li><a href="#form-tambah">Tambah Mahasiswa Baru</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <section>
+            <h2>Informasi Sistem</h2>
+            <p>Jadi Sistem Ini untuk mengolah data Mahasiswa</p>
+            <article>
+                <h3>Sistem</h3>
+                <p>Mahasiswa sigma</p>
+            </article>
+        </section>
+        <hr>
+        <section id="daftar-mahasiswa">
+            <h2>
+                Daftar Mahasiswa Aktif
+            </h2>
+            <p>Ini adalah daftar daftar mahasiswa aktif</p>
+            <table border="1" cellpadding ="8" cellspacing = "0">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Foto</th>
+                        <th>NPM</th>
+                        <th>Nama Lengkap</th>
+                        <th>Program Studi</th>
+                        <th>Angkatan</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="poto.jpeg" alt="foto jaya" width="150" height="150"></td>
+                        <td>2415061122</td>
+                        <td>Jaya Pratama</td>
+                        <td>Teknik Informatika</td>
+                        <td>2024</td>
+                        <td>2415061122@students.unila.ac.id</td>
+                    </tr>
+
+                     <tr>
+                        <td>2</td>
+                        <td><img src="poto.jpeg" alt="foto jaya" width="150" height="150"></td>
+                        <td>2415061123</td>
+                        <td>Jarwo</td>
+                        <td>Teknik Dukun</td>
+                        <td>2025</td>
+                        <td>2415061123@students.unila.ac.id</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td><img src="poto.jpeg" alt="foto jaya" width="150" height="150"></td>
+                        <td>2415061124</td>
+                        <td>Jarwo</td>
+                        <td>Teknik Loker</td>
+                        <td>2026</td>
+                        <td>Email : 2415061124@students.unila.ac.id</td>
+                    </tr>
+                </tbody>
+            </table>
+                
+        </table>
+        </section>
+        <hr>
+        <section id="form-tambah">
+            <h2>
+                Tambah Mahasiswa Baru
+            </h2>
+            <p>Tambah disini aja</p>
+            <form action="POST">
+                <fieldset>
+                    <legend>
+                        <p>
+                            <label for="npm">Nomor Pokok Mahasiswa NPM</label>
+                            <br>
+                            <input type="text" name="npm" placeholder="Contoh : 2315061118" required pattern="[0-9]{8,12}" title="NPM harus berupa angka 8-12 digit">
+                            <br>
+                            <label for="Nama Lengkap">Nama Lengkap</label>
+                                <br>
+                                <input type="text" id="nama" name="nama" placeholder="Contoh : Jaya Pratama" required minlength="3"
+                                maxlength="100">
+                                <br>
+                                <small>
+
+                                </small>
+                            </label>
+                            <label for="Program Studi">Program Studi</label>
+                            <br>
+                            <select name="program_studi" id="program_studi" required>
+                                <option value="">Pilih Program Studi</option>
+                                <option value="Teknik Informatika">Teknik Informatika</option>
+                            </select>
+                            <label for="angkatan">Tahun Angkatan</label>
+                            <br>
+                            <input type="number" id="angkatan" name="angkatan" placeholder="Contoh 2024" required min="2018" max="2026">
+                            <br>
+                            <small></small>
+                            <label for="email">Alamat Email:</label>
+                            <br>
+                            <input type="email" id="email"  name="email" placeholder="Contoh email@gmail.com" required>
+                            <br>
+                            <small></small>
+                            <button type="submit">Simpan Data Mahasiswa</button>
+                            <button type="reset">Reset Formulir</button>
+                        </p>
+                    </legend>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
