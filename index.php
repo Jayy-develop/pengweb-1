@@ -225,7 +225,7 @@ require_once __DIR__ . '/includes/header.php';
     </form>
 </section>
 
-
+<?php
 require_once __DIR__ . '/includes/functions.php';
 
 $page_title = 'Uji Fungsi Modular - Percobaan 1';
